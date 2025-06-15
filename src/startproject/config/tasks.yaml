@@ -1,0 +1,33 @@
+researcher_task:
+  description: >
+    Recherche et synthèse des types de machines synchrones, de leur fonctionnement physique,
+    des équations de base, et des paramètres clés (inductances, couple, vitesse...).
+  expected_output: >
+    Un document structuré avec explication des principes, types de modèles, et paramètres utilisés.
+  agent: researcher
+
+modeler_task:
+  description: >
+    Construire un modèle mathématique de machine synchrone (équations du couple, tension, 
+    vitesse de rotation...), compatible avec une simulation temporelle (discrétisation possible).
+  expected_output: >
+    Liste d’équations avec définitions des variables, hypothèses, et structure temporelle.
+  agent: modeler
+
+coder_task:
+  description: >
+    Écrire un code Python qui simule le comportement d'une machine synchrone selon le modèle fourni.
+    Ajouter une boucle temporelle, et afficher les résultats sous forme de graphiques.
+  expected_output: >
+      Code Python commenté, avec une fonction principale, paramètres modifiables, 
+      et affichage matplotlib.
+  agent: coder
+
+visualizer_task:
+  description: >
+    Créer une interface console ou graphique pour permettre à l'utilisateur de modifier les paramètres
+    (vitesse, charge, tension, etc.) et visualiser les résultats dynamiquement.
+  expected_output: >
+    Interface simple (console ou tkinter/CLI) et fonctions de visualisation interactive.
+  agent: visualizer
+
